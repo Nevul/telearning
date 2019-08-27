@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Telearning</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="Css/tablas.css">
+    <link rel="stylesheet" href="Css/Fonts.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <a href="index.html">
+                    <h1 class="logo">Telearning</h1>
+                </a>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone">0991796039</span>
+                </p>
+                <p class="main-header__contactInfo__address">
+                    <span class="icon-location">Urb Los Ángeles 125 - Sacha, Ecuador</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <ul class="menu">
+        <li class="list "><a href="#" class="icon-circle icon-points">HTML </a>
+            <ul class="items">
+                <li><a href="introduccion.html">Introducción a Html</a></li>
+                <li><a href="multimedia.html">Multimedia e incrustación</a></li>
+                <li><a href="tablas.html">Tablas Html</a></li>
+                <li><a href="formularios.html">Formularios Html</a></li>
+            </ul>
+        </li>
+        <li class="list"><a href="#" class="icon-circle icon-points">CSS</a>
+            <ul class="items">
+                <li> <a href="introduccion-css.html">Introducción a Css</a></li>
+                <li> <a href="texto-estilo.html">Texto de estilo</a></li>
+            </ul>
+        </li>
+        <li class="list"><a href="#" class="icon-circle icon-points">ABOUT US</a>
+            <ul class="items">
+                <li> <a href="index.html"> Inicio </a></li>
+                <li> <a href="integrantes.html"> Integrantes </a></li>
+                <li> <a href="https://facebook.com/nevuldesign"> Facebook </a></li>
+                <li> <a href="https://twitter.com/Alex_19xD"> Twitter </a></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <section class="banner">
+        <img src="Image/Banner4.jpg" alt="Tablas" class="banner__img">
+        <div class="banner__content">Tablas Html</div>
+    </section>
+
+    <main class="main">
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">Contenido de tablas</h2>
+                <p class="main__txt">Podemos crear tablas, cubriendo los conceptos básicos como filas y celdas, encabezados, haciendo que las celdas abarquen varias columnas y filas, y cómo agrupar todas las celdas en una columna para propósitos de estilo.</p>
+            </div>
+        </section>
+
+        <section class="main-content container">
+            <h2>¿Qué es una tabla?</h2>
+            <p>Una tabla es un conjunto estructurado de datos compuesto por filas y columnas ( datos tabulares ). Una tabla le permite buscar rápida y fácilmente valores que indican algún tipo de conexión entre diferentes tipos de datos, por ejemplo, una persona y su edad, o un día o la semana, o el horario de una piscina local.</p>
+            <div class="format-img" id="img-1">
+                <img src="Image/ejm1.png">
+            </div>
+            <h2>Crear tu primera mesa</h2>
+            <p>Ya hemos hablado bastante sobre la teoría de la tabla, así que veamos un ejemplo práctico y construyamos una tabla simple.</p>
+            <ol>
+                <li>En primer lugar, haga una copia local de <strong>blank-template.html</strong> y <strong>minimal-table.css</strong> en un nuevo directorio en su máquina local.</li>
+                <li>El contenido de cada tabla está encerrado por estas dos etiquetas: <strong>&#60;table&#62;</strong><strong>&#60;/table&#62;</strong> . Agregue estos dentro del cuerpo de su HTML.</li>
+                <li>El contenedor más pequeño dentro de una tabla es una celda de tabla, que se crea mediante un elemento <strong>&#60;td&#62;</strong> ('td' significa 'datos de tabla'). Agregue lo siguiente dentro de las etiquetas de su tabla:</li>
+            </ol>
+            <div class="format-img" id="img-2">
+                <img src="Image/txt1.png">
+            </div>
+            <ol>
+                <li value="4">Si queremos una fila de cuatro celdas, necesitamos copiar estas etiquetas tres veces. Actualice el contenido de su tabla para que se vea así:</li>
+            </ol>
+            <div class="format-img" id="img-3">
+                <img src="Image/txt2.png">
+            </div>
+            <p>Como verá, las celdas no se colocan una debajo de la otra, sino que se alinean automáticamente entre sí en la misma fila. Cada elemento <strong>&#60;td&#62;</strong> crea una sola celda y juntos forman la primera fila. Cada celda que agregamos hace que la fila crezca más.</p>
+            <p>Para detener el crecimiento de esta fila y comenzar a colocar celdas posteriores en una segunda fila, necesitamos usar el elemento <strong>&#60;tr&#62;</strong> ('tr' significa 'fila de tabla'). Investiguemos esto ahora.</p>
+            <ol>
+                <li>Coloque las cuatro celdas que ya ha creado dentro de las etiquetas <strong>&#60;tr&#62;</strong>, así:</li>
+            </ol>
+            <div class="format-img" id="img-4">
+                <img src="Image/txt3.png">
+            </div>
+            <ol>
+                <li value="2">Ahora que ha hecho una fila, intente hacer una o dos más: cada fila debe estar envuelta en un elemento <strong>&#60;tr&#62;</strong> adicional, con cada celda contenida en un <strong>&#60;td&#62;</strong>.</li>
+            </ol>
+            <p>Esto debería dar como resultado una tabla similar a la siguiente:</p>
+            <div class="format-img" id="img-5">
+                <img src="Image/ejm2.png">
+            </div>    
+        </section>
+        
+    </main>
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">¿Por qué visitarnos?</h2>
+                <p class="column__txt">Aprende las bases de Html y Css para el desarrollo de tu propio sitio web.</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contáctanos</h2>
+                <p class="column__txt">Urb Los Ángeles 125 - Sacha, Ecuador</p>
+                <p class="column__txt">Teléfono: 0991796039</p>
+                <p class="column__txt">nevul@gmail.com</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Síguenos en nuestras redes</h2>
+                <p class="column__txt"><a href="https://facebook.com/nevuldesign" class="icon-facebook">Facebook</a></p>
+                <p class="column__txt"><a href="https://twitter.com/Alex_19xD" class="icon-twitter">Síguenos en Twitter</a></p>
+            </div>
+            <p class="copy">© 2019 Telemática II A | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="Js/menu2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Telearning</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="Css/texto-estilo.css">
+    <link rel="stylesheet" href="Css/Fonts.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <a href="index.html">
+                    <h1 class="logo">Telearning</h1>
+                </a>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone">0991796039</span>
+                </p>
+                <p class="main-header__contactInfo__address">
+                    <span class="icon-location">Urb Los Ángeles 125 - Sacha, Ecuador</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <ul class="menu">
+        <li class="list "><a href="#" class="icon-circle icon-points">HTML </a>
+            <ul class="items">
+                <li><a href="introduccion.html">Introducción a Html</a></li>
+                <li><a href="multimedia.html">Multimedia e incrustación</a></li>
+                <li><a href="tablas.html">Tablas Html</a></li>
+                <li><a href="formularios.html">Formularios Html</a></li>
+            </ul>
+        </li>
+        <li class="list"><a href="#" class="icon-circle icon-points">CSS</a>
+            <ul class="items">
+                <li> <a href="introduccion-css.html">Introducción a Css</a></li>
+                <li> <a href="texto-estilo.html">Texto de estilo</a></li>
+            </ul>
+        </li>
+        <li class="list"><a href="#" class="icon-circle icon-points">ABOUT US</a>
+            <ul class="items">
+                <li> <a href="index.html"> Inicio </a></li>
+                <li> <a href="integrantes.html"> Integrantes </a></li>
+                <li> <a href="https://facebook.com/nevuldesign"> Facebook </a></li>
+                <li> <a href="https://twitter.com/Alex_19xD"> Twitter </a></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <section class="banner">
+        <img src="Image/Banner4.jpg" alt="Tablas" class="banner__img">
+        <div class="banner__content">Texto de estilo</div>
+    </section>
+
+    <main class="main">
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">Dale estilo a tu texto</h2>
+                <p class="main__txt">Aquí veremos los fundamentos básicos del estilo de texto/fuente, incluida la configuración del peso de la fuente, la familia y el estilo, entre otras cosas.</p>
+            </div>
+        </section>
+
+        <section class="main-content container">
+            <h2>¿Qué implica el estilo del texto en CSS?</h2>
+            <p>Las propiedades CSS utilizadas para dar estilo al texto generalmente se dividen en dos categorías, que veremos por separado en este artículo:</p>
+            <ul>
+                <li><strong>Estilos de fuente</strong>: propiedades que afectan la fuente que se aplica al texto, que afectan la fuente que se aplica, su tamaño, si está en negrita, cursiva, etc.</li>
+                <li><strong>Estilos de diseño de texto</strong>: propiedades que afectan el espaciado y otras características de diseño del texto, lo que permite la manipulación, por ejemplo, del espacio entre líneas y letras, y cómo se alinea el texto dentro del cuadro de contenido.</li>
+            </ul>
+            
+            <h2>Fuentes</h2>
+            <p>Pasemos directamente a ver las propiedades de las fuentes de estilo. En este ejemplo aplicaremos algunas propiedades CSS diferentes a la misma muestra HTML, que se ve así:</p>
+            <div class="format-img" id="img-1">
+                <img src="Image/t1.png">
+            </div>
+            <h3>Color</h3>
+            <p>La propiedad de <strong>color</strong> establece el color del contenido de primer plano de los elementos seleccionados (que generalmente es el texto, pero también puede incluir un par de otras cosas, como un subrayado o un sobrelineado colocado en el texto usando la propiedad de <strong>text-decoration</strong>).</p>
+            <p><strong>color</strong> puede aceptar cualquier <strong>unidad de color CSS</strong>, por ejemplo:</p>
+            <div class="format-img" id="img-2">
+                <img src="Image/t2.png">
+            </div>
+            <p>Esto hará que los párrafos se vuelvan rojos, en lugar del negro estándar predeterminado del navegador, de esta manera:</p>
+            <div class="format-img" id="img-3">
+                <img src="Image/t3.png">
+            </div>
+            <h3>Familias de fuentes</h3>
+            <p>Para establecer una fuente diferente en su texto, use la propiedad de <strong>font-family</strong>; esto le permite especificar una fuente (o una lista de fuentes) para que el navegador se aplique a los elementos seleccionados. El navegador solo aplicará una fuente si está disponible en la máquina a la que se accede al sitio web; si no, solo usará una <strong>fuente predeterminada</strong> del navegador. Un ejemplo simple se ve así:</p>
+            <div class="format-img" id="img-4">
+                <img src="Image/t4.png">
+            </div>
+            <p>Esto haría que todos los párrafos de una página adopten la fuente arial, que se encuentra en cualquier computadora.</p>
+            <h3>Tamaño de fuente</h3>
+            <p>Las unidades más comunes que se usará para dimensionar el texto son:</p>
+            <ul>
+                <li><strong>px</strong> (píxeles): la cantidad de píxeles de alto que desea que tenga el texto. Esta es una unidad absoluta: da como resultado el mismo valor final calculado para la fuente en la página en casi cualquier situación.</li>
+                <li><strong>em</strong> s: 1em es igual al tamaño de fuente establecido en el elemento padre del elemento actual que estamos diseñando (más específicamente, el ancho de una letra mayúscula M contenida dentro del elemento padre).</li>
+                <li><strong>rem</strong> s: funcionan igual que <strong>em</strong> s, excepto que 1 <strong>rem</strong> es igual al tamaño de fuente establecido en el elemento raíz del documento (es decir, <strong>&#60;html&#62;</strong>), no el elemento padre.</li>
+            </ul>
+            <p>El <strong>font-size</strong> de un elemento se hereda del elemento padre de ese elemento. Todo esto comienza con el elemento raíz de todo el documento, <strong>&#60;html&#62;</strong>, cuyo <strong>font-size</strong> se establece en 16px como estándar en todos los navegadores. Cualquier párrafo (u otro elemento que no tenga un tamaño diferente establecido por el navegador) dentro del elemento raíz tendrá un tamaño final de 16px.</p>
+            <h3>Estilo de fuente, peso de fuente, transformación de texto y decoración de texto.</h3>
+            <p>CSS proporciona cuatro propiedades comunes para alterar el peso / énfasis visual del texto:</p>
+            <ul>
+                <li><strong>font-style</strong>: se utiliza para activar y desactivar el texto en cursiva. Los valores posibles son los siguientes (rara vez usará esto, a menos que quiera desactivar algunos estilos en cursiva por alguna razón):</li>
+                <ul>
+                    <li><strong>normal</strong>: establece el texto en la fuente normal (desactiva las cursivas existentes).</li>
+                    <li><strong>italic</strong>: establece el texto para usar la versión en cursiva de la fuente si está disponible; si no está disponible, simulará cursiva con oblicuo en su lugar.</li>
+                    <li><strong>oblique</strong>: establece el texto para usar una versión simulada de una fuente en cursiva, creada inclinando la versión normal .</li>
+                </ul>
+                <li><strong>font-weight</strong>: establece la negrita del texto. Esto tiene muchos valores disponibles en caso de que tenga muchas variantes de fuente disponibles (como <em>-light</em>, <em>-normal</em>, <em>-bold</em>, <em>-extrabold</em>, <em>-black</em>, etc.), pero de manera realista rara vez usará ninguna de ellas, excepto <strong>normal</strong> y <strong>bold</strong>:</li>
+                <ul>
+                    <li><strong>normal</strong>, <strong>bold</strong>: peso normal y negrita</li>
+                    <li><strong>lighter</strong>, <strong>bolder</strong>: establece la audacia del elemento actual para que sea un paso más clara o más pesada que la audacia de su elemento padre.</li>
+                    <li><strong>100 - 900</strong>: valores de negrita numéricos que proporcionan un control más detallado que las palabras clave anteriores, si es necesario.</li>
+                </ul>
+                <li><strong>text-transform</strong>: le permite configurar su fuente para que se transforme. Los valores incluyen:</li>
+                <ul>
+                    <li><strong>none</strong>: evita cualquier transformación.</li>
+                    <li><strong>uppercase</strong>: transforma todo el texto en mayúsculas.</li>
+                    <li><strong>lowercase</strong>: transforma todo el texto en minúsculas.</li>
+                    <li><strong>capitalize</strong>: transforma todas las palabras para tener la primera letra en mayúscula .</li>
+                </ul>
+                <li><strong>text-decoration</strong>: establece / desarma decoraciones de texto en las fuentes (principalmente lo usará para desarmar el subrayado predeterminado en los enlaces al diseñarlos). Los valores disponibles son:</li>
+                <ul>
+                    <li><strong>none</strong>: Anula las decoraciones de texto ya presentes.</li>
+                    <li><strong>underline</strong>: Subraya el texto.</li>
+                    <li><strong>overline</strong>: le da al texto un overline.</li>
+                    <li><strong>line-through</strong>: coloca un tachado sobre el texto.</li>
+                </ul>
+            </ul>
+            <p>Debe tener en cuenta que <strong>text-decoration</strong> puede aceptar múltiples valores a la vez, si desea agregar varias decoraciones simultáneamente.</p>
+            
+            <h2>Diseño del texto</h2>
+            <p>Con las propiedades básicas de la fuente, veamos las propiedades que podemos usar para afectar el diseño del texto.</p>
+            <h3>Alineación del texto</h3>
+            <p>La propiedad de <strong>text-align</strong> se usa para controlar cómo se alinea el texto dentro de su cuadro de contenido. Los valores disponibles son los siguientes y funcionan de la misma manera que en una aplicación de procesador de texto normal:</p>
+            <ul>
+                <li><strong>left</strong>: Left justifica el texto.</li>
+                <li><strong>right</strong>: derecha justifica el texto.</li>
+                <li><strong>center</strong>: Centra el texto.</li>
+                <li><strong>justify</strong>: hace que el texto se extienda, variando los espacios entre las palabras para que todas las líneas de texto tengan el mismo ancho.</li>
+            </ul>
+            <p>Si aplicamos <strong>text-align: center;</strong> al <strong>&#60;h1&#62;</strong> en nuestro ejemplo, terminaríamos con esto:</p>
+            <div class="format-img" id="img-5">
+                <img src="Image/ejmp1.png">
+            </div>
+            <h3>Altura de línea</h3>
+            <p>La propiedad de altura de línea establece la altura de cada línea de texto; esto puede tomar la mayoría de las <strong>unidades de longitud y tamaño</strong>, pero también puede tomar un valor sin unidad, que actúa como un multiplicador y generalmente se considera la mejor opción: el <strong>font-size</strong> se multiplica para obtener la <strong>line-height</strong>.</p>
+            <p>Por ejemplo:</p>
+            <div class="format-img" id="img-6">
+                <img src="Image/t5.png">
+            </div>
+            <p>Aplicar esto a los elementos <strong>&#60;p&#62;</strong> en nuestro ejemplo nos daría este resultado:</p>
+            <div class="format-img" id="img-7">
+                <img src="Image/ejmp2.png">
+            </div>
+        </section>
+        
+    </main>
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">¿Por qué visitarnos?</h2>
+                <p class="column__txt">Aprende las bases de Html y Css para el desarrollo de tu propio sitio web.</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contáctanos</h2>
+                <p class="column__txt">Urb Los Ángeles 125 - Sacha, Ecuador</p>
+                <p class="column__txt">Teléfono: 0991796039</p>
+                <p class="column__txt">nevul@gmail.com</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Síguenos en nuestras redes</h2>
+                <p class="column__txt"><a href="https://facebook.com/nevuldesign" class="icon-facebook">Facebook</a></p>
+                <p class="column__txt"><a href="https://twitter.com/Alex_19xD" class="icon-twitter">Síguenos en Twitter</a></p>
+            </div>
+            <p class="copy">© 2019 Telemática II A | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="Js/menu2.js"></script>
+</body>
+
+</html>

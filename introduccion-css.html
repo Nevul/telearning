@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Telearning</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="Css/introduccion-css.css">
+    <link rel="stylesheet" href="Css/Fonts.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <a href="index.html">
+                    <h1 class="logo">Telearning</h1>
+                </a>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone">0991796039</span>
+                </p>
+                <p class="main-header__contactInfo__address">
+                    <span class="icon-location">Urb Los Ángeles 125 - Sacha, Ecuador</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <ul class="menu">
+        <li class="list "><a href="#" class="icon-circle icon-points">HTML </a>
+            <ul class="items">
+                <li><a href="introduccion.html">Introducción a Html</a></li>
+                <li><a href="multimedia.html">Multimedia e incrustación</a></li>
+                <li><a href="tablas.html">Tablas Html</a></li>
+                <li><a href="formularios.html">Formularios Html</a></li>
+            </ul>
+        </li>
+        <li class="list"><a href="#" class="icon-circle icon-points">CSS</a>
+            <ul class="items">
+                <li> <a href="introduccion-css.html">Introducción a Css</a></li>
+                <li> <a href="texto-estilo.html">Texto de estilo</a></li>
+            </ul>
+        </li>
+        <li class="list"><a href="#" class="icon-circle icon-points">ABOUT US</a>
+            <ul class="items">
+                <li> <a href="index.html"> Inicio </a></li>
+                <li> <a href="integrantes.html"> Integrantes </a></li>
+                <li> <a href="https://facebook.com/nevuldesign"> Facebook </a></li>
+                <li> <a href="https://twitter.com/Alex_19xD"> Twitter </a></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <section class="banner">
+        <img src="Image/Banner4.jpg" alt="Tablas" class="banner__img">
+        <div class="banner__content">Introducción a Css</div>
+    </section>
+
+    <main class="main">
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">Contenido de tablas</h2>
+                <p class="main__txt">Podemos crear tablas, cubriendo los conceptos básicos como filas y celdas, encabezados, haciendo que las celdas abarquen varias columnas y filas, y cómo agrupar todas las celdas en una columna para propósitos de estilo.</p>
+            </div>
+        </section>
+
+        <section class="main-content container">
+            <h2>¿Qué es el CSS?</h2>
+            <p>Como hemos mencionado antes, CSS es un lenguaje para especificar cómo se presentan los documentos a los usuarios: cómo se diseñan, distribuyen, etc.</p>
+            <p>Un <strong>documento</strong> suele ser un archivo de texto estructurado con un lenguaje de marcado : HTML es el lenguaje de marcado más común, pero también encontrará otros lenguajes de marcado como SVG o XML .</p>
+            <p><strong>Presentar</strong> un documento a un usuario significa convertirlo en una forma utilizable para su audiencia. Los navegadores , como Firefox , Chrome o Internet Explorer , están diseñados para presentar documentos visualmente, por ejemplo, en una pantalla de computadora, proyector o impresora.</p>
+            
+            <h2>¿Cómo afecta CSS a HTML?</h2>
+            <p>Los navegadores web aplican <strong>reglas CSS</strong> a un documento para afectar cómo se muestran. Una regla CSS se forma a partir de:</p>
+            <ul>
+                <li>Un conjunto de propiedades , que tienen valores establecidos para actualizar la forma en que se muestra el contenido HTML, por ejemplo, <em>quiero que el ancho de mi elemento sea el 50% de su elemento principal y que su fondo sea rojo</em>.</li>
+                <li>Un selector , que selecciona los elementos a los que desea aplicar los valores de propiedad actualizados. Por ejemplo, <em>quiero aplicar mi regla CSS a todos los párrafos de mi documento HTML</em>.</li>
+            </ul>
+            <p>Un conjunto de reglas CSS contenidas en una hoja de estilo determina cómo debe verse una página web.</p>
+            <h3>Un ejemplo rápido de CSS</h3>
+            <p>Las descripciones anteriores pueden o no haber tenido sentido, así que asegurémonos de que las cosas estén claras presentando un ejemplo rápido. En primer lugar, tomemos un documento HTML simple que contenga un <strong>&#60;h1&#62;</strong> y un <strong>&#60;p&#62;</strong> (observe que una hoja de estilo se aplica al HTML usando un elemento <strong>&#60;link&#62;</strong>):</p>
+            <div class="format-img" id="img-1">
+                <img src="Image/tx1.png">
+            </div>
+            <p>Ahora veamos un ejemplo CSS muy simple que contiene dos reglas:</p>
+            <div class="format-img" id="img-2">
+                <img src="Image/tx2.png">
+            </div>
+            <p>La primera regla comienza con un selector <strong>h1</strong>, lo que significa que aplicará sus valores de propiedad al elemento <strong>&#60;h1&#62;</strong> . Contiene tres propiedades y sus valores (cada par de propiedad / valor se denomina <strong>declaración</strong>):</p>
+            <ol>
+                <li>El primero establece el color del texto en azul.</li>
+                <li>l segundo establece el color de fondo en amarillo.</li>
+                <li>El tercero coloca un borde alrededor del encabezado de 1 píxel de ancho, sólido (sin puntos, ni discontinuo, etc.) y de color negro.</li>
+            </ol>
+            <p>La segunda regla comienza con un selector p , lo que significa que aplicará sus valores de propiedad al elemento <strong>&#60;p&#62;</strong>. Contiene una declaración, que establece el color del texto en rojo.</p>
+            <p>En un navegador web, el código anterior produciría el siguiente resultado:</p>
+            <div class="format-img" id="img-3">
+                <img src="Image/ejm5.png">
+            </div>
+            <p>Esto no es demasiado bonito, pero al menos comienza a darte una idea de cómo funciona CSS.</p>
+            <h2>Cómo aplicar tu CSS a tu HTML</h2>
+            <p>Hay tres formas diferentes de aplicar CSS a un documento HTML con las que se encontrará comúnmente, algunas más útiles que otras. Aquí revisaremos brevemente cada uno.</p>
+            <h3>Hoja de estilo externa</h3>
+            <p>Ya has visto hojas de estilo externas en esta sección, pero no con ese nombre. Una hoja de estilo externa es cuando tiene su CSS escrito en un archivo separado con una extensión <strong>.css</strong>, y lo hace referencia desde un elemento HTML <strong>&#60;link&#62;</strong>. El archivo HTML se parece a esto:</p>
+            <div class="format-img" id="img-4">
+                <img src="Image/tx1.png">
+            </div>
+            <p>Y el archivo CSS:</p>
+            <div class="format-img" id="img-5">
+                <img src="Image/tx2.png">
+            </div>
+            <p>Podría decirse que este método es el mejor, ya que puede usar una hoja de estilo para diseñar varios documentos, y solo necesitaría actualizar el CSS en un lugar si se necesitaran cambios.</p>
+            <h3>Hoja de estilo interna</h3>
+            <p>Una hoja de estilo interna es donde no tiene un archivo CSS externo, sino que coloca su CSS dentro de un elemento <strong>&#60;style&#62;</strong> , contenido dentro del <strong>encabezado HTML</strong>. Entonces el HTML se vería así:</p>
+            <div class="format-img" id="img-6">
+                <img src="Image/tx3.png">
+            </div>
+            <p>Esto puede ser útil en algunas circunstancias (tal vez esté trabajando con un sistema de administración de contenido donde no puede modificar los archivos CSS directamente), pero no es tan eficiente como las hojas de estilo externas: en un sitio web, el CSS necesitaría se repetirá en cada página y se actualizará en varios lugares si se requieren cambios.</p>
+            <h3>Estilos en línea</h3>
+            <p>Los <strong>estilos en línea</strong> son declaraciones CSS que afectan solo a un elemento, contenido dentro de un atributo de <strong>style</strong>:</p>
+            <div class="format-img" id="img-7">
+                <img src="Image/tx4.png">
+            </div>
+            <p>¡Por favor no hagas esto, a menos que realmente tengas que hacerlo! Es realmente malo para el mantenimiento (puede que tenga que actualizar la <em>misma información</em> varias veces por documento ), y también mezcla su información de presentación CSS con su información estructural HTML, haciendo que el CSS sea más difícil de leer y comprender. Mantener sus diferentes tipos de código separados y puros hace un trabajo mucho más fácil para todos los que trabajan en el código.</p>
+            <p>El único momento en que puede tener que recurrir al uso de estilos en línea es cuando su entorno de trabajo es realmente restrictivo (quizás su CMS solo le permite editar el cuerpo HTML)</p>
+            
+            <h2>Un toque de vocabulario</h2>
+            <p>En su nivel más básico, CSS consta de dos bloques de construcción:</p>
+            <ul>
+                <li><strong>Propiedades:</strong> identificadores legibles por humanos que indican qué características estilísticas (por ejemplo, fuente, ancho, color de fondo) desea cambiar.</li>
+                <li><strong>Valores:</strong> a cada propiedad especificada se le asigna un valor que indica cómo desea cambiar esas características estilísticas (por ejemplo, a qué desea cambiar la fuente, el ancho o el color de fondo).</li>
+            </ul>
+            <p>Una propiedad emparejada con un valor se denomina declaración CSS . Las declaraciones CSS se colocan dentro de los bloques de declaración CSS . Y, por último, los bloques de declaración CSS se combinan con selectores para producir conjuntos de reglas CSS (o reglas CSS ).</p>
+            <h2>Sintaxis en detalle</h2>
+            <h3>Declaraciones CSS</h3>
+            <p>Establecer las propiedades de CSS en valores específicos es la función principal del lenguaje CSS. El motor CSS calcula qué declaraciones se aplican a cada elemento de una página para diseñarla y diseñarla adecuadamente. La propiedad y el valor en cada par están separados por dos puntos (:).</p>
+            <div class="format-img" id="img-8">
+                <img src="Image/ejm6.png">
+            </div>
+            <p>Hay más de <strong>300 propiedades diferentes</strong> en CSS y casi un número infinito de valores diferentes. No todos los pares de propiedades y <strong>valores</strong> están permitidos. Cada propiedad tiene una lista específica de valores válidos definidos para ella.</p>
+            <h3>Bloques de declaración CSS</h3>
+            <p>Las declaraciones se agrupan en <strong>bloques</strong>, con cada conjunto de declaraciones envuelto por una llave de apertura ( { ) y una de cierre ( } ).</p>
+            <p>Las declaraciones dentro de un <strong>bloque de declaración</strong> deben estar separadas por punto y coma ( ; ), de lo contrario, el código no funcionará (o al menos dará resultados inesperados). La última declaración de un bloque no necesita ser terminada por un punto y coma. Sin embargo, a menudo se considera un <em>buen estilo</em> hacerlo, ya que evita olvidar agregarlo al extender el bloque con otra declaración.</p>
+            <div class="format-img" id="img-9">
+                <img src="Image/ejm7.png">
+            </div>
+            <h3>Selectores CSS y reglas</h3>
+            <p>Nos falta una parte del rompecabezas: necesitamos analizar cómo decirle a nuestros bloques de declaración a qué elementos se deben aplicar. Esto se hace prefijando cada bloque de declaración con un <strong>selector</strong> , un patrón que coincide con algunos elementos de la página. Las declaraciones asociadas se aplicarán solo a esos elementos. El selector más el bloque de declaración se denomina <strong>conjunto de reglas</strong> o, a menudo, simplemente una <strong>regla</strong>.</p>
+            <div class="format-img" id="img-10">
+                <img src="Image/ejm8.png">
+            </div>
+            <p>Los selectores pueden volverse muy complicados: puede hacer que una regla coincida con varios elementos al incluir múltiples selectores separados por comas (un grupo), y los selectores se pueden encadenar juntos.</p>
+            <p>Un elemento puede coincidir con varios selectores, por lo tanto, varias reglas pueden establecer una propiedad determinada varias veces. CSS define cuál tiene prioridad sobre las demás y debe aplicarse.</p>
+            
+            <h2>Introducción de selectores</h2>
+            <p>Los selectores se usan para apuntar a los elementos HTML en nuestras páginas web que queremos diseñar. Hay una amplia variedad de selectores CSS disponibles, lo que permite una precisión de grano fino al seleccionar elementos para diseñar.</p>
+            <h3>Los básicos</h3>
+            <p>En la última sección explicamos en detalle la <strong>sintaxis y la terminología</strong> general de <strong>CSS</strong>. Para recapitular, los selectores son una parte de una regla CSS y vienen justo antes de que se bloqueen las declaraciones CSS.</p>
+            <div class="format-img" id="img-11">
+                <img src="Image/ejm8.png">
+            </div>
+            <h3>Diferentes tipos de selectores</h3>
+            <p>Los selectores se pueden dividir en las siguientes categorías:</p>
+            <ul>
+                <li><strong>Selectores simples</strong>: <strong>haga</strong> coincidir uno o más elementos según el tipo de elemento, <strong>clas</strong> o <strong>id</strong>.</li>
+                <li><strong>Selectores de atributos</strong>: unen uno o más elementos en función de sus atributos / valores de atributo.</li>
+                <li><strong>Pseudo-clases</strong>: coincide con uno o más elementos que existen en un determinado estado, como un elemento que se encuentra sobre el puntero del mouse, o una casilla de verificación que está actualmente desactivada o marcada, o un elemento que es el primer elemento secundario de su padre en el árbol DOM.</li>
+                <li><strong>Pseudoelementos</strong>: coincide con una o más partes de contenido que están en una posición determinada en relación con un elemento, por ejemplo, la primera palabra de cada párrafo, o contenido generado que aparece justo antes de un elemento.</li>
+                <li><strong>Combinadores</strong>: estos no son exactamente selectores en sí mismos, sino formas de combinar dos o más selectores de manera útil para selecciones muy específicas. Entonces, por ejemplo, puede seleccionar solo párrafos que sean descendientes directos de divs, o párrafos que vienen directamente después de los encabezados.</li>
+                <li><strong>Selectores múltiples</strong>: una vez más, estos no son selectores separados; La idea es que puede colocar múltiples selectores en la misma regla CSS, separados por comas, para aplicar un único conjunto de declaraciones a todos los elementos seleccionados por esos selectores.</li>
+            </ul>
+            
+            <h2>Selectores simples</h2>
+            <p> Coinciden directamente con uno o más elementos de un documento, según el tipo de elemento, <strong>class</strong> o <strong>id</strong>.</p>
+            <h3>Selectores de tipo, también conocidos como selectores de elementos </h3>
+            <p>Este selector es solo una coincidencia entre mayúsculas y minúsculas entre el nombre del selector y un nombre de elemento HTML dado. Esta es la forma más sencilla de apuntar a todos los elementos de un tipo dado. Echemos un vistazo a un ejemplo:</p>
+            <p>Aquí hay algo de HTML:</p>
+            <div class="format-img" id="img-12">
+                <img src="Image/tx5.png">
+            </div>
+            <p>Una hoja de estilo simple:</p>
+            <div class="format-img" id="img-13">
+                <img src="Image/tx6.png">
+            </div>
+            <p>Y obtenemos esto:</p>
+            <div class="format-img" id="img-14">
+                <img src="Image/ejm9.png">
+            </div>
+            
+            <h2>Selectores de clase</h2>
+            <p>El selector de clase consta de un punto, ' <strong>.</strong> ', seguido de un nombre de clase. Un nombre de clase es cualquier valor, sin espacios, colocado dentro de un atributo de class HTML. Depende de usted elegir un nombre para la clase. También es digno de mención que varios elementos en un documento pueden tener el mismo valor de clase, y un solo elemento puede tener múltiples nombres de clase separados por espacios en blanco. Aquí hay un ejemplo rápido:</p>
+            <p>Aquí hay algo de HTML:</p>
+            <div class="format-img" id="img-15">
+                <img src="Image/tx7.png">
+            </div>
+            <p>Una hoja de estilo simple que estiliza dos de estas clases:</p>
+            <div class="format-img" id="img-16">
+                <img src="Image/tx8.png">
+            </div>
+            <p>Y obtenemos este resultado:</p>
+            <div class="format-img" id="img-17">
+                <img src="Image/ejm10.png">
+            </div>
+            
+            <h2>Selectores de ID</h2>
+            <p>El selector de ID consta de un símbolo de hash / libra (<strong>#</strong>) , seguido del nombre de ID de un elemento dado. Cualquier elemento puede tener un nombre de ID único establecido con el atributo <strong>id</strong>. Depende de usted elegir un nombre de identificación. Es la forma más eficiente de seleccionar un solo elemento.</p>
+            <p>Veamos un ejemplo rápido: aquí hay algunos HTML:</p>
+            <div class="format-img" id="img-18">
+                <img src="Image/tx9.png">
+            </div>
+            <p>Una hoja de estilo simple:</p>
+            <div class="format-img" id="img-19">
+                <img src="Image/tx10.png">
+            </div>
+            <p>Y obtenemos esto como una salida:</p>
+            <div class="format-img" id="img-20">
+                <img src="Image/ejm11.png">
+            </div>
+        </section>
+        
+    </main>
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">¿Por qué visitarnos?</h2>
+                <p class="column__txt">Aprende las bases de Html y Css para el desarrollo de tu propio sitio web.</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contáctanos</h2>
+                <p class="column__txt">Urb Los Ángeles 125 - Sacha, Ecuador</p>
+                <p class="column__txt">Teléfono: 0991796039</p>
+                <p class="column__txt">nevul@gmail.com</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Síguenos en nuestras redes</h2>
+                <p class="column__txt"><a href="https://facebook.com/nevuldesign" class="icon-facebook">Facebook</a></p>
+                <p class="column__txt"><a href="https://twitter.com/Alex_19xD" class="icon-twitter">Síguenos en Twitter</a></p>
+            </div>
+            <p class="copy">© 2019 Telemática II A | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="Js/menu2.js"></script>
+</body>
+
+</html>

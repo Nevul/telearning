@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Telearning</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="Css/formularios.css">
+    <link rel="stylesheet" href="Css/Fonts.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <a href="index.html">
+                    <h1 class="logo">Telearning</h1>
+                </a>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone">0991796039</span>
+                </p>
+                <p class="main-header__contactInfo__address">
+                    <span class="icon-location">Urb Los Ángeles 125 - Sacha, Ecuador</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <ul class="menu">
+        <li class="list "><a href="#" class="icon-circle icon-points">HTML </a>
+            <ul class="items">
+                <li><a href="introduccion.html">Introducción a Html</a></li>
+                <li><a href="multimedia.html">Multimedia e incrustación</a></li>
+                <li><a href="tablas.html">Tablas Html</a></li>
+                <li><a href="formularios.html">Formularios Html</a></li>
+            </ul>
+        </li>
+        <li class="list"><a href="#" class="icon-circle icon-points">CSS</a>
+            <ul class="items">
+                <li> <a href="introduccion-css.html">Introducción a Css</a></li>
+                <li> <a href="texto-estilo.html">Texto de estilo</a></li>
+            </ul>
+        </li>
+        <li class="list"><a href="#" class="icon-circle icon-points">ABOUT US</a>
+            <ul class="items">
+                <li> <a href="index.html"> Inicio </a></li>
+                <li> <a href="integrantes.html"> Integrantes </a></li>
+                <li> <a href="https://facebook.com/nevuldesign"> Facebook </a></li>
+                <li> <a href="https://twitter.com/Alex_19xD"> Twitter </a></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <section class="banner">
+        <img src="Image/Banner4.jpg" alt="Tablas" class="banner__img">
+        <div class="banner__content">Formularios Html</div>
+    </section>
+
+    <main class="main">
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">Contenido de formularios</h2>
+                <p class="main__txt">Ten tu primera experiencia de crear un formulario HTML, incluido el diseño de un formulario simple, implementarlo utilizando los elementos HTML correctos y agregar un estilo muy simple a través de CSS.</p>
+            </div>
+        </section>
+
+        <section class="main-content container">
+            <h2>Diseñando tu formulario</h2>
+            <p>En esta sección, crearemos un formulario de contacto simple. Hagamos un bosquejo aproximado.</p>
+            <div class="format-img" id="img-1">
+                <img src="Image/bosquejo.png">
+            </div>
+            <p>Nuestro formulario contendrá tres campos de texto y un botón. Le pedimos al usuario su nombre, su correo electrónico y el mensaje que desea enviar. Al presionar el botón se enviarán sus datos a un servidor web.</p>
+            
+            <h2>Implementando nuestro formulario HTML</h2>
+            <p>Ok, ahora estamos listos para ir a HTML y codificar nuestro formulario. Para crear nuestro formulario de contacto, utilizaremos los siguientes elementos HTML: <strong>&#60;form&#62;</strong>, <strong>&#60;label&#62;</strong>, <strong>&#60;input&#62;</strong>, <strong>&#60;textarea&#62;</strong> y <strong>&#60;buttom&#62;</strong>.</p>
+            <p>Antes de continuar, cree una estructura básica de Html, donde ingrésaremos el formulario.</p>
+            <h3>El elemento <strong>&#60;form&#62;</strong></h3>
+            <p>Todos los formularios HTML comienzan con un elemento <strong>&#60;form&#62;</strong> como este:</p>
+            <div class="format-img" id="img-2">
+                <img src="Image/txt4.png">
+            </div>
+            <p>Este elemento define formalmente una forma. Es un elemento contenedor como un elemento <strong>&#60;div&#62;</strong> o <strong>&#60;p&#62;</strong> , pero también admite algunos atributos específicos para configurar la forma en que se comporta el formulario. Todos sus atributos son opcionales, pero se considera una práctica recomendada establecer siempre al menos el atributo de action y el atributo de method .</p>
+            <ul>
+                <li>El atributo de <strong>action</strong> define la ubicación (URL) donde se deben enviar los datos recopilados del formulario cuando se envían.</li>
+                <li>El atributo del <strong>method</strong> define con qué método HTTP enviar los datos (puede ser "obtener" o "publicar").</li>
+            </ul>
+            <p>Por ahora, agregue el elemento <strong>&#60;form&#62;</strong> en su cuerpo HTML.</p>
+            <h3>Los elementos <strong>&#60;label&#62;</strong> , <strong>&#60;input&#62;</strong> y <strong>&#60;textarea&#62;</strong></h3>
+            <p>Nuestro formulario de contacto es realmente simple y contiene tres campos de texto, cada uno con una etiqueta. El campo de entrada para el nombre será un campo de texto básico de una sola línea, el campo de entrada para el correo electrónico será un campo de texto de una sola línea que acepta solo una dirección de correo electrónico, y el campo de entrada para el mensaje será Un campo de texto multilínea básico.</p>
+            <p>En términos de código HTML, necesitamos algo como lo siguiente para implementar estos widgets de formulario:</p>
+            <div class="format-img" id="img-3">
+                <img src="Image/txt5.png">
+            </div>
+            <p>Actualice su código de formulario para que se vea como el anterior.</p>
+            <p>Los elementos <strong>&#60;div&#62;</strong> están ahí para estructurar convenientemente nuestro código y facilitar el diseño (ver más adelante en el artículo). Tenga en cuenta el uso del atributo for en todos los elementos <strong>&#60;label&#62;</strong>; Es una forma formal de vincular una etiqueta a un widget de formulario. Este atributo hace referencia a la id del widget correspondiente. Hay algún beneficio en hacer esto. La más obvia es permitir que el usuario haga clic en la etiqueta para activar el widget correspondiente.</p>
+            <p>En el elemento <strong>&#60;input&#62;</strong>, el atributo más importante es el atributo type . Este atributo es extremadamente importante porque define la forma en que se comporta el elemento <strong>&#60;input&#62;</strong>.</p>
+            <ul>
+                <li>En nuestro ejemplo simple, usamos el text del valor para la primera entrada, el valor predeterminado para este atributo. Representa un campo de texto básico de una línea que acepta cualquier tipo de entrada de texto.</li>
+                <li>Para la segunda entrada, utilizamos el valor de email que define un campo de texto de una sola línea que solo acepta una dirección de correo electrónico bien formada. Esto convierte un campo de texto básico en una especie de campo "inteligente" que realizará algunas comprobaciones en los datos escritos por el usuario.</li>
+            </ul>
+            <p>Por último, pero no menos importante, tenga en cuenta la sintaxis de <strong>&#60;input&#62;</strong> vs. <strong>&#60;textarea&#62;</strong><strong>&#60;/textarea&#62;</strong> . Esta es una de las rarezas de HTML. La etiqueta <strong>&#60;input&#62;</strong> es un elemento vacío, lo que significa que no necesita una etiqueta de cierre. Por el contrario, <strong>&#60;textarea&#62;</strong> no es un elemento vacío, por lo que debe cerrarlo con la etiqueta de finalización adecuada. Esto tiene un impacto en una característica específica de los formularios HTML: la forma en que define el valor predeterminado. Para definir el valor predeterminado de un elemento <strong>&#60;input&#62;</strong> debe usar el atributo de value esta manera:</p>
+            <div class="format-img" id="img-4">
+                <img src="Image/txt6.png">
+            </div>
+            <p>Por el contrario, si desea definir el valor predeterminado de un <strong>&#60;textarea&#62;</strong>, solo tiene que poner ese valor predeterminado entre la etiqueta de apertura y cierre del elemento <strong>&#60;textarea&#62;</strong>, así:</p>
+            <div class="format-img" id="img-5">
+                <img src="Image/txt7.png">
+            </div>
+            <h3>El elemento <strong>&#60;button&#62;</strong></h3>
+            <p>Nuestra forma está casi lista; solo tenemos que agregar un botón para permitir que el usuario envíe sus datos una vez que haya completado el formulario. Esto se hace simplemente usando el elemento <strong>&#60;button&#62;</strong> ; agregue lo siguiente justo arriba de la etiqueta de cierre <strong>&#60;/form&#62;</strong>:</p>
+            <div class="format-img" id="img-6">
+                <img src="Image/txt8.png">
+            </div>
+            <p>Verá que el elemento <strong>&#60;button&#62;</strong> también acepta un atributo de type ; esto acepta uno de los tres valores: <strong>submit</strong>, <strong>reset</strong> o <strong>button</strong>.</p>
+            <ul>
+                <li>Un clic en un botón de <strong>submit</strong> (el valor predeterminado) envía los datos del formulario a la página web definida por el atributo de <strong>action</strong> del elemento <strong>&#60;/form&#62;</strong>.</li>
+                <li>Un clic en un botón de <strong>reset</strong> restablece todos los widgets de formulario a su valor predeterminado inmediatamente. Desde el punto de vista de UX, esto se considera una mala práctica.</li>
+                <li>Un clic en un botón no hace ... ¡nada! Eso suena tonto, pero es increíblemente útil para crear botones personalizados con JavaScript.</li>
+            </ul>
+            
+            <h2>Estilo básico de forma</h2>
+            <p>Ahora que ha terminado de escribir el código HTML de su formulario, intente guardarlo y mirarlo en un navegador. Por el momento, verás que se ve bastante feo.</p>
+            <div class="format-img" id="img-7">
+                <img src="Image/ejm3.png">
+            </div>
+            <p>Los formularios son muy difíciles de diseñar. Está más allá del alcance de este artículo enseñarle el estilo de los formularios, por lo que, por el momento, solo conseguiremos que agregue un poco de CSS para que se vea bien.</p>
+            <p>En primer lugar, agregue un elemento <strong>&#60;style&#62;</strong> a su página, dentro de su encabezado HTML. Debería verse así:</p>
+            <div class="format-img" id="img-8">
+                <img src="Image/txt9.png">
+            </div>
+            <p>Dentro de las etiquetas de estilo, agregue el siguiente CSS, tal como se muestra:</p>
+            <div class="format-img" id="img-9">
+                <img src="Image/txt10.png">
+            </div>
+            <div class="format-img" id="img-10">
+                <img src="Image/txt11.png">
+            </div>
+            <p>Ahora nuestra forma se ve mucho menos fea.</p>
+             <div class="format-img" id="img-11">
+                <img src="Image/ejm4.png">
+            </div>
+        </section>
+        
+    </main>
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">¿Por qué visitarnos?</h2>
+                <p class="column__txt">Aprende las bases de Html y Css para el desarrollo de tu propio sitio web.</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contáctanos</h2>
+                <p class="column__txt">Urb Los Ángeles 125 - Sacha, Ecuador</p>
+                <p class="column__txt">Teléfono: 0991796039</p>
+                <p class="column__txt">nevul@gmail.com</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Síguenos en nuestras redes</h2>
+                <p class="column__txt"><a href="https://facebook.com/nevuldesign" class="icon-facebook">Facebook</a></p>
+                <p class="column__txt"><a href="https://twitter.com/Alex_19xD" class="icon-twitter">Síguenos en Twitter</a></p>
+            </div>
+            <p class="copy">© 2019 Telemática II A | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="Js/menu2.js"></script>
+</body>
+
+</html>

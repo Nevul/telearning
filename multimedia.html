@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Telearning</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="Css/multimedia.css">
+    <link rel="stylesheet" href="Css/Fonts.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <a href="index.html">
+                    <h1 class="logo">Telearning</h1>
+                </a>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone">0991796039</span>
+                </p>
+                <p class="main-header__contactInfo__address">
+                    <span class="icon-location">Urb Los Ángeles 125 - Sacha, Ecuador</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <ul class="menu">
+        <li class="list "><a href="#" class="icon-circle icon-points">HTML </a>
+            <ul class="items">
+                <li><a href="introduccion.html">Introducción a Html</a></li>
+                <li><a href="multimedia.html">Multimedia e incrustación</a></li>
+                <li><a href="tablas.html">Tablas Html</a></li>
+                <li><a href="formularios.html">Formularios Html</a></li>
+            </ul>
+        </li>
+        <li class="list"><a href="#" class="icon-circle icon-points">CSS</a>
+            <ul class="items">
+                <li> <a href="introduccion-css.html">Introducción a Css</a></li>
+                <li> <a href="texto-estilo.html">Texto de estilo</a></li>
+            </ul>
+        </li>
+        <li class="list"><a href="#" class="icon-circle icon-points">ABOUT US</a>
+            <ul class="items">
+                <li> <a href="index.html"> Inicio </a></li>
+                <li> <a href="integrantes.html"> Integrantes </a></li>
+                <li> <a href="https://facebook.com/nevuldesign"> Facebook </a></li>
+                <li> <a href="https://twitter.com/Alex_19xD"> Twitter </a></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <section class="banner">
+        <img src="Image/Banner4.jpg" alt="Multimedia" class="banner__img">
+        <div class="banner__content">Multimedia e incrustación</div>
+    </section>
+
+    <main class="main">
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">Contenido Multimedia</h2>
+                <p class="main__txt">Ahora que tenemos las bases de html, es hora de ver contenido más interesante. Incluiremos contenido multimedia como imágenes, videos, audio e incluso como incrustar páginas web completas.</p>
+            </div>
+        </section>
+
+        <section class="main-content container">
+            <h2>¿Cómo ponemos una imagen en una página web?</h2>
+            <p>Para poner una imagen simple en una página web, usamos el elemento <strong>&#60;img&#62;</strong>. Este es un elemento vacío (lo que significa que no tiene contenido de texto o etiqueta de cierre) que requiere un mínimo de un atributo para ser útil: <strong>&#60;src&#62;</strong> (a veces dicho como su título completo, fuente ). El atributo <strong>&#60;src&#62;</strong> contiene una ruta que apunta a la imagen que desea incrustar en la página, que puede ser una URL relativa o absoluta, de la misma manera que los valores del atributo <strong>&#60;href&#62;</strong> del elemento <strong>&#60;a&#62;</strong>.</p>
+            <p>Entonces, por ejemplo, si su imagen se llama <strong>paisaje.jpg</strong>, y se encuentra en el mismo directorio que su página HTML, podría incrustar la imagen así:</p>
+            <div class="format-img" id="img-1">
+                <img src="Image/text1.png">
+            </div>
+            <p>Si la imagen estaba en un subdirectorio de <strong>images</strong> , que estaba dentro del mismo directorio que la página HTML (que Google recomienda para fines de SEO / indexación), entonces la incrustaría así:</p>
+            <div class="format-img" id="img-2">
+                <img src="Image/text2.png">
+            </div>
+            <p>Y así.</p>
+            <p>Puede incrustar la imagen usando su URL absoluta, por ejemplo:</p>
+            <div class="format-img" id="img-3">
+                <img src="Image/text3.png">
+            </div>
+            <p>Pero esto no tiene sentido, ya que solo hace que el navegador trabaje más, busque la dirección IP del servidor DNS nuevamente, etc. Casi siempre mantendrá las imágenes de su sitio web en el mismo servidor que su HTML.</p>
+            <p>Nuestro código anterior nos daría el siguiente resultado:</p>
+            <div class="format-img" id="img-4">
+                <img src="Image/ej4.png">
+            </div>
+            <h3>Texto alternativo</h3>
+            <p>El siguiente atributo que veremos es <strong>alt</strong> . Se supone que su valor es una descripción textual de la imagen, para su uso en situaciones donde la imagen no se puede ver / mostrar. Por ejemplo, nuestro código anterior podría modificarse así:</p>
+            <div class="format-img" id="img-5">
+                <img src="Image/text4.png">
+            </div>
+            <p>La forma más fácil de probar su texto <strong>alt</strong> es escribir mal su nombre de archivo a propósito. Si, por ejemplo, el nombre de nuestra imagen se deletreaba <strong>paisajeee.jpg</strong>, el navegador no mostraría la imagen y, en su lugar, mostraría el texto alternativo:</p>
+            <div class="format-img" id="img-6">
+                <img src="Image/ej5.png">
+            </div>
+            <h3>Anchura y altura</h3>
+            <p>Puede usar los atributos de <strong>width</strong> y <strong>height</strong> para especificar el ancho y alto de su imagen. Por ejemplo:</p>
+            <div class="format-img" id="img-7">
+                <img src="Image/text5.png">
+            </div>
+            <p>No debe alterar el tamaño de sus imágenes utilizando atributos HTML. Si configura el tamaño de la imagen demasiado grande, terminará con imágenes que se ven granuladas, borrosas o demasiado pequeñas, y desperdiciará el ancho de banda al descargar una imagen que no se ajusta a las necesidades del usuario. La imagen también puede terminar distorsionada si no mantiene la <strong>relación de aspecto</strong> correcta. Debe usar un editor de imágenes para colocar su imagen en el tamaño correcto antes de ponerla en su página web.</p>
+            <h3>Títulos de imagen</h3>
+            <p>Al igual que con los enlaces, también puede agregar atributos de <strong>title</strong> a las imágenes, para proporcionar más información de soporte si es necesario. En nuestro ejemplo, podríamos hacer esto:</p>
+            <div class="format-img" id="img-8">
+                <img src="Image/ej6.png">
+            </div>
+            <p>Sin embargo, esto no es recomendable: el <strong>title</strong> tiene una serie de problemas de accesibilidad, principalmente debido al hecho de que el soporte del lector de pantalla es muy impredecible y la mayoría de los navegadores no lo mostrarán a menos que esté pasando el mouse (por ejemplo, sin acceso al teclado). usuarios.</p>
+            <p>Es mejor incluir dicha información de apoyo en el texto del artículo principal, en lugar de adjuntarla a la imagen.</p>
+            <h2>Imágenes de fondo CSS</h2>
+            <p>También puede usar CSS para incrustar imágenes en páginas web (y JavaScript, pero esa es otra historia completamente). La propiedad CSS <strong>background-image</strong> y las otras propiedades <strong>background-*</strong> se utilizan para controlar la ubicación de la imagen de fondo. Por ejemplo, para colocar una imagen de fondo en cada párrafo de una página, puede hacer esto:</p>
+            <div class="format-img" id="img-9">
+                <img src="Image/text6.png">
+            </div>
+            <p>La imagen incrustada resultante es posiblemente más fácil de colocar y controlar que las imágenes HTML. Entonces, ¿por qué molestarse con las imágenes HTML? Como se indicó anteriormente, las imágenes de fondo CSS son solo para decoración. Si solo desea agregar algo bonito a su página para mejorar las imágenes, está bien. Sin embargo, tales imágenes no tienen ningún significado semántico en absoluto. No pueden tener ningún equivalente de texto, son invisibles para los lectores de pantalla, etc. ¡Es el momento de brillar las imágenes HTML!</p>
+            
+            <h2>Audio y video en la web</h2>
+            <h3>El elemento &#60;video&#62;</h3>
+            <p>El elemento &#60;video&#62; permite incrustar un video muy fácilmente. Un ejemplo realmente simple se ve así:</p>
+            <div class="format-img" id="img-10">
+                <img src="Image/text7.png">
+            </div>
+            <p>Las características de la nota son:</p>
+            <p><strong>src:</strong></p>
+            <p>De la misma manera que para el elemento &#60;img&#62; , el atributo src (fuente) contiene una ruta al video que desea insertar. Funciona exactamente de la misma manera.</p>
+            <p><strong>controls:</strong></p>
+            <p>Los usuarios deben poder controlar la reproducción de video y audio (es especialmente importante para las personas que tienen epilepsia).</p>
+            <p>El video incrustado se verá así:</p>
+            <div class="format-img" id="img-11">
+                <img src="Image/ej7.png">
+            </div>
+            <h3>Soporta múltiples formatos</h3>
+            <p>Hay un problema con el ejemplo anterior, que quizás ya haya notado si ha intentado acceder al enlace en vivo anterior con un navegador como Safari o Internet Explorer. ¡El video no se reproducirá! Esto se debe a que diferentes navegadores admiten diferentes formatos de video (y audio).</p>
+            <p>Los formatos como MP3, MP4 y WebM se denominan <strong>formatos contenedor</strong>. Contienen diferentes partes que componen toda la canción o el video, como una pista de audio, una pista de video (en el caso del video) y metadatos para describir los medios que se presentan.</p>
+            <p>Las pistas de audio y video también están en diferentes formatos, por ejemplo:</p>
+            <ul>
+                <li>Un contenedor WebM generalmente empaqueta audio Ogg Vorbis con video VP8 / VP9. Esto es compatible principalmente en Firefox y Chrome.</li>
+                <li>Un contenedor MP4 a menudo empaqueta audio AAC o MP3 con video H.264. Esto es compatible principalmente en Internet Explorer y Safari.</li>
+                <li>El contenedor Ogg más antiguo tiende a ir con audio Ogg Vorbis y video Ogg Theora. Esto fue compatible principalmente con Firefox y Chrome, pero básicamente ha sido reemplazado por el formato WebM de mejor calidad.</li>
+            </ul>
+            <p>Un reproductor de audio tenderá a reproducir una pista de audio directamente, por ejemplo, un archivo MP3 u Ogg. Estos no necesitan contenedores.</p>
+            <p>Los formatos anteriores existen para comprimir video y audio en archivos manejables.</p>
+            <p>¿Entonces como hacemos esto? Véalo a continuación:</p>
+            <div class="format-img" id="img-12">
+                <img src="Image/text8.png">
+            </div>
+            <p>Aquí hemos eliminado el atributo <strong>src</strong> de la etiqueta &#60;video&#62; real y, en su lugar, hemos incluido elementos <strong>&#60;source&#62;</strong> separados que apuntan a sus propias fuentes. En este caso, el navegador pasará por los elementos <strong>&#60;source&#62;</strong> y reproducirá el primero que tenga el códec para soportar. Incluir fuentes WebM y MP4 debería ser suficiente para reproducir su video en la mayoría de las plataformas y navegadores en estos días.</p>
+            <p>Cada elemento <strong>&#60;source&#62;</strong> también tiene un atributo de <strong>type</strong>. Esto es opcional, pero se recomienda que los incluya, ya que contienen los tipos MIME de los archivos de video, y los navegadores pueden leerlos y omitir inmediatamente los videos que no entienden. Si no están incluidos, los navegadores se cargarán e intentarán reproducir cada archivo hasta que encuentren uno que funcione, lo que tomará aún más tiempo y recursos.</p>
+            <h3>Otras funciones &#60;video&#62;</h3>
+            <p>Hay una serie de otras características que puede incluir en un video HTML5. Eche un vistazo a nuestro tercer ejemplo, a continuación:</p>
+            <div class="format-img" id="img-13">
+                <img src="Image/text9.png">
+            </div>
+            <p>Esto nos dará un resultado similar a este:</p>
+            <div class="format-img" id="img-14">
+                <img src="Image/ej8.png">
+            </div>
+            <p>Las nuevas características son:</p>
+            <p><strong>width</strong> y <strong>height</strong></p>
+            <p>Puede controlar el tamaño del video con estos atributos o con CSS . En ambos casos, los videos mantienen su relación ancho-altura nativa, conocida como la relación de aspecto . Si la relación de aspecto no se mantiene con los tamaños que establezca, el video crecerá para llenar el espacio horizontalmente, y el espacio sin llenar solo recibirá un color de fondo sólido de forma predeterminada.</p>
+            <p><strong>autoplay</strong></p>
+            <p>Hace que el audio o el video comience a reproducirse de inmediato, mientras se carga el resto de la página. Se recomienda no utilizar el video de reproducción automática (o audio) en sus sitios, porque los usuarios pueden encontrarlo realmente molesto.</p>
+            <p><strong>loop</strong></p>
+            <p>Hace que el video (o audio) comience a reproducirse cada vez que finaliza. Esto también puede ser molesto, así que solo úselo si es realmente necesario.</p>
+            <p><strong>muted</strong></p>
+            <p>Hace que los medios se reproduzcan con el sonido apagado de forma predeterminada.</p>
+            <p><strong>poster</strong></p>
+            <p>La URL de una imagen que se mostrará antes de reproducir el video. Está destinado a ser utilizado para una pantalla de presentación o pantalla publicitaria.</p>
+            
+            <h3>El elemento &#60;audio&#62;</h3>
+            <p>El elemento <strong>&#60;audio&#62;</strong> funciona exactamente de la misma manera que el elemento <strong>&#60;video&#62;</strong>, con algunas pequeñas diferencias como se describe a continuación. Un ejemplo típico podría ser así:</p>
+            <div class="format-img" id="img-15">
+                <img src="Image/text10.png">
+            </div>
+            <p>Esto produce algo como lo siguiente en un navegador:</p>
+            <div class="format-img" id="img-16">
+                <img src="Image/ej9.png">
+            </div>
+            <p>Esto ocupa menos espacio que un reproductor de video, ya que no hay un componente visual; solo necesita mostrar los controles para reproducir el audio. Otras diferencias con respecto al video HTML5 son las siguientes:</p>
+            <ul>
+                <li>El elemento <strong>&#60;audio&#62;</strong> no admite los atributos <strong>width / height</strong> ; de nuevo, no hay un componente visual, por lo que no hay nada a lo que asignar un ancho o alto.</li>
+                <li>Tampoco es compatible con el atributo de <strong>poster</strong> ; de nuevo, sin componente visual.</li>
+            </ul>
+            <p>Aparte de esto, <strong>&#60;audio&#62;</strong> admite las mismas funciones que <strong>&#60;video&#62;</strong>: revise las secciones anteriores para obtener más información sobre ellas.</p>            
+        </section>
+        
+    </main>
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">¿Por qué visitarnos?</h2>
+                <p class="column__txt">Aprende las bases de Html y Css para el desarrollo de tu propio sitio web.</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contáctanos</h2>
+                <p class="column__txt">Urb Los Ángeles 125 - Sacha, Ecuador</p>
+                <p class="column__txt">Teléfono: 0991796039</p>
+                <p class="column__txt">nevul@gmail.com</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Síguenos en nuestras redes</h2>
+                <p class="column__txt"><a href="https://facebook.com/nevuldesign" class="icon-facebook">Facebook</a></p>
+                <p class="column__txt"><a href="https://twitter.com/Alex_19xD" class="icon-twitter">Síguenos en Twitter</a></p>
+            </div>
+            <p class="copy">© 2019 Telemática II A | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="Js/menu2.js"></script>
+</body>
+
+</html>

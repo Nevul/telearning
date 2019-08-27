@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Telearning</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="Css/introduccion.css">
+    <link rel="stylesheet" href="Css/Fonts.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <a href="index.html">
+                    <h1 class="logo">Telearning</h1>
+                </a>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone">0991796039</span>
+                </p>
+                <p class="main-header__contactInfo__address">
+                    <span class="icon-location">Urb Los Ángeles 125 - Sacha, Ecuador</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <ul class="menu">
+        <li class="list "><a href="#" class="icon-circle icon-points">HTML </a>
+            <ul class="items">
+                <li><a href="introduccion.html">Introducción a Html</a></li>
+                <li><a href="multimedia.html">Multimedia e incrustación</a></li>
+                <li><a href="tablas.html">Tablas Html</a></li>
+                <li><a href="formularios.html">Formularios Html</a></li>
+            </ul>
+        </li>
+        <li class="list"><a href="#" class="icon-circle icon-points">CSS</a>
+            <ul class="items">
+                <li> <a href="introduccion-css.html">Introducción a Css</a></li>
+                <li> <a href="texto-estilo.html">Texto de estilo</a></li>
+            </ul>
+        </li>
+        <li class="list"><a href="#" class="icon-circle icon-points">ABOUT US</a>
+            <ul class="items">
+                <li> <a href="index.html"> Inicio </a></li>
+                <li> <a href="integrantes.html"> Integrantes </a></li>
+                <li> <a href="https://facebook.com/nevuldesign"> Facebook </a></li>
+                <li> <a href="https://twitter.com/Alex_19xD"> Twitter </a></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <section class="banner">
+        <img src="Image/Banner4.jpg" alt="Introducción" class="banner__img">
+        <div class="banner__content">Introducción</div>
+    </section>
+
+    <main class="main">
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">Introducción a Html</h2>
+                <p class="main__txt">Conceptos básicos de Html, para comenzar. Definimos elementos y atributos. También mostramos como se estructura un elemento Html y demás términos importantes.</p>
+            </div>
+        </section>
+
+        <section class="main-content container">
+            <h2>Anatomía de un elemento html</h2>
+            <div class="format-img" id="img-1">
+                <img src="Image/Elemento-estructura.png" alt="Estructura de elemento">
+            </div>
+            <p>Las partes principales de nuestro elemento son:</p>
+            <ol>
+                <li><strong>La etiqueta de apertura: </strong>Consiste en el nombre del elemento (en este caso, p), envuelto en paréntesis angulares de apertura y cierre. Esto indica dónde comienza a surtir efecto el elemento, en este caso dónde está el comienzo del párrafo.</li>
+                <li><strong>La etiqueta de cierre: </strong>es la misma que la etiqueta de apertura, excepto que incluye una barra diagonal antes del nombre del elemento. Esto indica dónde termina el elemento, en este caso dónde está el final del párrafo. No incluir una etiqueta de cierre es un error común de principiante y puede dar lugar a resultados extraños.</li>
+                <li><strong>El contenido: </strong>este es el contenido del elemento, que en este caso es solo texto.</li>
+                <li><strong>El elemento: </strong>la etiqueta de apertura más la etiqueta de cierre más el contenido es igual al elemento.</li>
+            </ol>
+            
+            <h3>Elementos de anidamiento</h3>
+            <p>También puede poner elementos dentro de otros elementos, esto se llama anidamiento . Si quisiéramos decir que nuestro gato es muy gruñón, podríamos envolver la palabra "muy" en un elemento <strong>&#60;strong&#62;</strong>,lo que significa que la palabra debe enfatizarse fuertemente:</p>
+            <div class="format-img" id="img-2">
+                <img src="Image/texto1.png" alt="Anidamiento de elementos">
+            </div>
+            <p>Los elementos tienen que abrirse y cerrarse correctamente, por lo que están claramente dentro o fuera del otro.</p>
+            
+            <h3>Bloque versus elementos en línea</h3>
+            <p>Hay dos categorías importantes de elementos en HTML que debe conocer. Son elementos a nivel de bloque y elementos en línea.</p>
+            <ul>
+                <li>Los elementos de nivel de bloque forman un bloque visible en una página: aparecerán en una nueva línea desde cualquier contenido que haya antes, y cualquier contenido que vaya después también aparecerá en una nueva línea. Los elementos a nivel de bloque tienden a ser elementos estructurales en la página que representan, por ejemplo, párrafos, listas, menús de navegación, pies de página, etc. Un elemento a nivel de bloque no estaría anidado dentro de un elemento en línea, pero podría estar anidado dentro otro elemento a nivel de bloque.</li>
+                <li>Los elementos en línea son aquellos que están contenidos dentro de elementos de nivel de bloque y rodean solo pequeñas partes del contenido del documento, no párrafos enteros y agrupaciones de contenido. Un elemento en línea no hará que aparezca una nueva línea en el documento; normalmente aparecerían dentro de un párrafo de texto, por ejemplo, un elemento <strong>&#60;a&#62;</strong> (hipervínculo) o elementos de énfasis como <strong>&#60;em&#62;</strong> o <strong>&#60;strong&#62;</strong>.</li>
+            </ul>
+            <p>Tome el siguiente ejemplo:</p>
+            <div class="format-img" id="img-3">
+                <img src="Image/texto2.png">
+            </div>
+            <p><strong>&#60;em&#62;</strong> es un elemento en línea, por lo que, como puede ver a continuación, los primeros tres elementos se encuentran en la misma línea entre sí sin espacio en el medio. Por otro lado, <strong>&#60;p&#62;</strong> es un elemento de nivel de bloque, por lo que cada elemento aparece en una nueva línea, con espacio encima y debajo de cada uno (el espacio se debe al estilo CSS predeterminado que el navegador aplica a los párrafos).</p>
+            <div class="format-img" id="img-4">
+                <img src="Image/texto3.png">
+            </div>
+            
+            <h3>Elementos vacíos</h3>
+            <p>No todos los elementos siguen el patrón anterior de etiqueta de apertura, contenido, etiqueta de cierre. Algunos elementos consisten solo en una sola etiqueta, que generalmente se usa para insertar / incrustar algo en el documento en el lugar donde se incluye. Por ejemplo, el elemento <strong>&#60;img&#62;</strong> incrusta un archivo de imagen en una página en la posición en la que está incluido:</p>
+            <div class="format-img" id="img-5">
+                <img src="Image/texto4.png">
+            </div>
+            <p>Esto generaría lo siguiente en su página:</p>
+            <div class="format-img" id="img-6">
+                <img src="Image/ej1.png">
+            </div>
+            
+            <h2>Atributos</h2>
+            <p>Los elementos también pueden tener atributos, que se ven así:</p>
+            <div class="format-img" id="img-7">
+                <img src="Image/Atributo-estructura.png" alt="Atributo-estructura">
+            </div>
+            <p>Los atributos contienen información adicional sobre el elemento que no desea que aparezca en el contenido real. En este caso, el atributo de "class" permite dar al elemento un nombre de identificación que luego puede usarse para apuntar al elemento con información de estilo y otras cosas.</p>
+            <p>Un atributo debe tener:</p>
+            <ol>
+                <li>Un espacio entre este y el nombre del elemento (o el atributo anterior, si el elemento ya tiene uno o más atributos).</li>
+                <li>El nombre del atributo, seguido de un signo igual.</li>
+                <li>Un valor de atributo, con comillas de apertura y cierre envuelto alrededor de él.</li>
+            </ol>
+            
+            <h3>Agregar atributos a un elemento</h3>
+            <p>Otro ejemplo de un elemento es <strong>&#60;a&#62;</strong> : significa "ancla" y convertirá el fragmento de texto en un hipervínculo. Esto puede tomar una serie de atributos, pero varios son los siguientes:</p>
+            <ul>
+                <li><strong>href: </strong>este atributo especifica como su valor la dirección web a la que desea que apunte el enlace; donde navega el navegador cuando se hace clic en el enlace. Por ejemplo, href="https://www.mozilla.org/".</li>
+                <li><strong>title: </strong>el atributo de <em>title</em> especifica información adicional sobre el enlace, como por ejemplo a qué página está enlazando. Por ejemplo, title="The Mozilla homepage" . Esto aparecerá como información sobre herramientas al pasar el cursor sobre él.</li>
+                <li><strong>target: </strong>atributo <em>target</em> especifica el contexto de navegación que se utilizará para mostrar el enlace. Por ejemplo, target="_blank" mostrará el enlace en una nueva pestaña. Si desea mostrar el enlace en la pestaña actual, simplemente omita este atributo.</li>
+            </ul>
+            
+            <h3>Atributos booleanos</h3>
+            <p>A veces verá atributos escritos sin valores, esto está perfectamente permitido. Estos se llaman atributos booleanos y solo pueden tener un valor, que generalmente es el mismo que el nombre del atributo. Como ejemplo, tome el atributo <strong>disabled</strong>, que puede asignar a los elementos de entrada del formulario si desea que estén deshabilitados (atenuados) para que el usuario no pueda ingresar ningún dato en ellos.</p>
+            <div class="format-img" id="img-8">
+                <img src="Image/texto5.png">
+            </div>
+            
+            <h2>Anatomía de un documento HTML.</h2>
+            <p>Eso resume los conceptos básicos de elementos HTML individuales, pero no son muy útiles por sí solos. Ahora veremos cómo se combinan los elementos individuales para formar una página HTML completa:</p>
+            <div class="format-img" id="img-9">
+                <img src="Image/texto6.png">
+            </div>
+            <p>Aquí tenemos:</p>
+            <ol>
+                <li><strong>&#60;!DOCTYPE html&#62; </strong>es la cadena de caracteres más corta que cuenta como un tipo de documento válido.</li>
+                <li><strong>&#60;html&#62;&#60;/html&#62; </strong>Este elemento envuelve todo el contenido de toda la página, y a veces se lo conoce como el elemento raíz.</li>
+                <li><strong>&#60;head&#62;&#60;/head&#62; </strong>Este elemento actúa como un contenedor para todas las cosas que desea incluir en la página HTML que no es el contenido que está mostrando a los visitantes de su página.</li>
+                <li><strong>&#60;meta charset="utf-8"&#62;: </strong>Este elemento establece el conjunto de caracteres que su documento debe usar para UTF-8, que incluye la mayoría de los caracteres de la gran mayoría de los idiomas escritos humanos.</li>
+                <li><strong>&#60;title&#62;&#60;/title&#62; </strong>Esto establece el título de su página, que es el título que aparece en la pestaña del navegador en el que se carga la página, y se utiliza para describir la página cuando la marca como favorita.</li>
+                <li><strong>&#60;body&#62;&#60;/body&#62; </strong>Contiene todo el contenido que desea mostrar a los usuarios web cuando visitan su página, ya sea texto, imágenes, videos, juegos, pistas de audio reproducibles o cualquier otra cosa.</li>
+            </ol>
+            
+            <h2>Comentarios HTML</h2>
+            <p>Para convertir una sección de contenido dentro de su archivo HTML en un comentario, debe envolverlo en los marcadores especiales &#60;!-- y --&#62; , por ejemplo:</p>
+            <div class="format-img" id="img-10">
+                <img src="Image/texto7.png">
+            </div>
+            
+            <h2>Los fundamentos: encabezados y párrafos</h2>
+            <p>El texto más estructurado consiste en encabezados y párrafos, ya sea que esté leyendo una historia, un periódico, un libro de texto universitario, una revista, etc.</p>
+            <p>El contenido estructurado hace que la experiencia de lectura sea más fácil y más agradable.</p>
+            <p>En HTML, cada párrafo tiene que estar envuelto en un elemento <strong>&#60;p&#62;</strong>, así:</p>
+            <div class="format-img" id="img-11">
+                <img src="Image/texto8.png">
+            </div>
+            <p>Cada encabezado debe estar envuelto en un elemento de encabezado:</p>
+            <div class="format-img" id="img-12">
+                <img src="Image/texto9.png">
+            </div>
+            <p>Hay seis elementos de encabezado: &#60;h1&#62; , &#60;h2&#62; , &#60;h3&#62; , &#60;h4&#62; , &#60;h5&#62; y &#60;h6&#62; . Cada elemento representa un nivel diferente de contenido en el documento; &#60;h1&#62; representa el encabezado principal, &#60;h2&#62; representa subtítulos, &#60;h3&#62; representa subtítulos, y así sucesivamente.</p>
+            
+            <h2>Listas</h2>
+            <p>Ahora volvamos nuestra atención a las listas. Las listas están en todas partes en la vida, desde tu lista de compras hasta la lista de instrucciones que sigues inconscientemente para llegar a tu casa todos los días, ¡hasta las listas de instrucciones que estás siguiendo en estos tutoriales! Las listas también están en todas partes en la Web, y tenemos dos tipos diferentes de los que preocuparnos.</p>
+            <h3>Lista desordenada</h3>
+            <p>Las listas desordenadas se usan para marcar listas de artículos para los que no importa el orden de los artículos. Por ejemplo:</p>
+            <div class="format-img" id="img-13">
+                <img src="Image/texto10.png">
+            </div>
+            <p>Esto se vería así:</p>
+            <div class="format-img" id="img-14">
+                <img src="Image/ej2.png">
+            </div>
+            <h3>Lista ordenada</h3>
+            <p>Las listas ordenadas son listas en las que importa el orden de los elementos. Por ejemplo:</p>
+            <div class="format-img" id="img-15">
+                <img src="Image/texto11.png">
+            </div>
+            <p>Esto se vería así:</p>
+            <div class="format-img" id="img-16">
+                <img src="Image/ej3.png">
+            </div>
+        </section>
+        
+    </main>
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">¿Por qué visitarnos?</h2>
+                <p class="column__txt">Aprende las bases de Html y Css para el desarrollo de tu propio sitio web.</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contáctanos</h2>
+                <p class="column__txt">Urb Los Ángeles 125 - Sacha, Ecuador</p>
+                <p class="column__txt">Teléfono: 0991796039</p>
+                <p class="column__txt">nevul@gmail.com</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Síguenos en nuestras redes</h2>
+                <p class="column__txt"><a href="https://facebook.com/nevuldesign" class="icon-facebook">Facebook</a></p>
+                <p class="column__txt"><a href="https://twitter.com/Alex_19xD" class="icon-twitter">Síguenos en Twitter</a></p>
+            </div>
+            <p class="copy">© 2019 Telemática II A | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="Js/menu2.js"></script>
+</body>
+
+</html>
